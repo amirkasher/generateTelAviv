@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="head">
+        <!-- here i add navigation bar with fixed position-->
+
+        <main class="head-main">
+            <div class="btn-head">
+                <button type="button" class="btn btn-dark">Start Your Day</button>
+            </div>
+        </main>
+    </div>
+    <br><br>
+    <div class="morning">
+        <header class="morning-header">
+            <h1>The First Part Of The Day</h1>
+        </header>
+        <main class="morning-main">
+            <div class="train">
+                <div class="container conti">
+                    <div class="row">
+                        <div class="col-sm-2 generate">
+                            <h1>Muscle Up</h1>
+                            <button type="button" onclick="calc1(train)" class="btn btn-primary">Generate</button>
+                        </div>
+                        <div class="col-sm-3 data">
+                            <h5>Name</h5>
+                            <p class='name' id="name1"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Type</h5>
+                            <p class='type' id="type1"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Address</h5>
+                            <p class='address' id="address1"></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="map">
+                                <iframe class="image1" id="map1" frameborder="0" scrolling="no" marginheight="0"
+                                    marginwidth="0" src=""></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+            </div>
+            <div class="breakfast">
+                <div class="container conti">
+                    <div class="row">
+                        <div class="col-sm-2 generate">
+                            <h1>Breakfast</h1>
+                            <button type="button" onclick="calc2(coffee)" class="btn btn-primary">Generate</button>
+                        </div>
+                        <div class="col-sm-3 data">
+                            <h5>Name</h5>
+                            <p class='name' id="name2"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Type</h5>
+                            <p class='type' id="type2"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Address</h5>
+                            <p class='address' id="address2"></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="map">
+                                <img class="image1" id="image2" src="" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hang-out1">
+                <div class="container conti">
+                    <div class="row">
+                        <div class="col-sm-2 generate">
+                            <h1 class="gettknowhtecity">Get To Know The City</h1>
+                            <button type="button" onclick="calc3(musi)" class="btn btn-primary">Generate</button>
+                        </div>
+                        <div class="col-sm-3 data">
+                            <h5>Name</h5>
+                            <p class='name' id="name3"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Type</h5>
+                            <p class='type' id="type3"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Address</h5>
+                            <p class='address' id="address3"></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="map">
+                                <img class="image1" id="image3" src="" alt="">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="non">
+        <header class="non-header">
+            <h1>The Middle of the Day</h1>
+        </header>
+        <main class="non-main">
+            <div class="lunch">
+                <div class="container conti">
+                    <div class="row">
+                        <div class="col-sm-2 generate">
+                            <h1 class="gettknowhtecity">It's Lunch Time</h1>
+                            <button type="button" onclick="calc4(lunch)" class="btn btn-primary">Generate</button>
+                        </div>
+                        <div class="col-sm-3 data">
+                            <h5>Name</h5>
+                            <p class='name' id="name4"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Type</h5>
+                            <p class='type' id="type4"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Address</h5>
+                            <p class='address' id="address4"></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="map">
+                                <img class="image1" id="image4" src="" alt="">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hang-out2">
+                <div class="container conti">
+                    <div class="row">
+                        <div class="col-sm-2 generate">
+                            <h1 class="gettknowhtecity">Hang Out</h1>
+                            <button type="button" onclick="calc5" class="btn btn-primary">Generate</button>
+                        </div>
+                        <div class="col-sm-3 data">
+                            <h5>Name</h5>
+                            <p class='name' id="name5"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Type</h5>
+                            <p class='type' id="type5"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Address</h5>
+                            <p class='address' id="address5"></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="map">
+                                <img class="image1" id="image5" src="" alt="">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sundown">
+                <div class="container conti">
+                    <div class="row">
+                        <div class="col-sm-2 generate">
+                            <h1 class="gettknowhtecity">Watch the Sun Set</h1>
+                            <button type="button" onclick="calc6" class="btn btn-primary">Generate</button>
+                        </div>
+                        <div class="col-sm-3 data">
+                            <h5>Name</h5>
+                            <p class='name' id="name6"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Type</h5>
+                            <p class='type' id="type6"></p>
+                        </div>
+                        <div class="col-sm-2 data">
+                            <h5>Address</h5>
+                            <p class='address' id="address6"></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="map">
+                                <img class="image1" id="image6" src="" alt="">
+
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </main>
+
+
+    </div>
+
+   
+<div class="evening">
+    <header class="evening-header">
+        <h1>The End of The Day<br> <span>(for some of us:)</span></h1>
+    </header>
+    <main class="evening-main">
+        <div class="dinner">
+            <div class="container conti">
+                <div class="row">
+                    <div class="col-sm-2 generate"><h1>Dinner</h1>
+                        <button type="button" onclick="calc7(lunch)" class="btn btn-primary">Generate</button>
+                    </div>
+                    <div class="col-sm-3 data">
+                        <h5>Name</h5>
+                        <p class='name' id="name7"></p>
+                    </div>
+                    <div class="col-sm-2 data">
+                        <h5>Type</h5>
+                        <p class='type' id="type7"></p>
+                    </div>
+                    <div class="col-sm-2 data">
+                        <h5>Address</h5>
+                        <p class='address' id="address7"></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="map">
+                            <img class="image1" id="image7" src="" alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sleep">4</div>
+    </main>
+
+
+
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="/train.js"></script>
+        <script src="/coffee.js"></script>
+        <script src="/museom.js"></script>
+        <script src="/lunch.js"></script>
+
+</body>
+
+</html>

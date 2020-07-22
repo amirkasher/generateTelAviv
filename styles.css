@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Heebo:wght@300&display=swap');
+
+
+html, body{
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.head{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(12 ,1fr);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.head-main{
+    grid-column: span 12;
+    /*border: 1px solid black;*/
+background-image: url('/backgroundTA.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+text-align: center;
+
+}
+
+.head-main .btn{
+    border-radius: 25px;
+    padding: 5px 30px;
+    transition: 1s;
+}
+
+.head-main .btn:hover{
+    padding: 10px 40px;
+    background-color: whitesmoke;
+    color: black;
+    letter-spacing: 10px;
+    transition: 0.5s;
+    border: none;
+}
+
+
+
+.btn-head{
+    position: relative;
+    top:82%;
+    
+}
+
+/* morning section */
+
+.morning{
+    height: 114%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: repeat(12 ,1fr);
+    margin-top: 180px;
+}
+
+.morning-main{
+    /*border:1px solid black;*/
+    grid-column: span 12;
+}
+
+.morning-header{
+    /*border:1px solid black;*/
+    grid-column: span 12;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.morning-header h1{
+    color: black;
+    letter-spacing: 20px;
+    font-size: 70px;
+ text-decoration: underline;
+ text-decoration-color: #B8D8BA;
+
+ 
+}
+
+.morning-main{
+    height: 114%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 38% 38% 38%;
+    grid-template-columns: repeat(12 ,1fr);
+}
+
+.train{
+    grid-column: span 12;
+    /*border:1px solid black;*/
+}
+.breakfast{
+    grid-column: span 12;
+    /*border:1px solid black;*/
+}
+.hang-out1{
+    grid-column: span 12;
+    /*border:1px solid black;*/
+}
+
+
+.conti{
+    width: 100px;
+    height: 170px;
+    box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.562); 
+    margin: 20px;
+    border-radius: 15px;
+    background-color: white;
+    z-index: 1;
+  
+  }
+  
+  img{
+      margin-top: 1.2px;
+      margin-left: 14px;
+      width: 100%;
+      height:168px;
+      border-radius: 15px;
+      transition: 0.2s;
+      background-color: black;
+  }
+  .image1:hover{
+      transform: scale(1.7);
+  }
+      
+  
+  
+  .data{
+      width: 100%;
+      margin-top: 19px;
+  }
+  .data input{
+      padding-bottom: 80px;
+  }
+    
+  .generate{
+      position: relative;
+      left: 2.5%;
+      margin-top: 17px;
+      
+  
+  }
+  .generate button{
+      position: relative;
+      right: 4px;
+      margin-top: -45px;
+      height: 120px;
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: center;
+      border-radius: 50%;
+      color: black;
+      background-color: rgb(243, 243, 243);
+      font-family: 'Comfortaa', cursive;
+      box-shadow: -9px 9px 0px rgba(66, 82, 87, 0.74);
+      border: transparent;
+      transition: 0.2s;
+      
+  
+  }
+  
+  .generate button:hover{
+      background-color: #B8D8BA;
+      box-shadow: none;
+      transition: 0.2s;
+  }
+  
+  .generate button:visited{
+      background-color: #75B8C8;
+  }
+  
+  .generate button:active{
+    background-color: #75B8C8;
+}
+  
+
+  
+  .name, 
+  .type, 
+  .address{
+      font-size:1.5vw;
+      box-shadow: 2px 0px 10px rgb(201, 201, 201);
+      border-radius: 10px;
+      height: 90px;
+      text-align: center;
+      padding: 5px;
+      font-family: 'Heebo', sans-serif;
+      
+  }
+  
+  .address{
+      font-size: 20px;
+  
+  
+  } 
+  
+  h5{
+      text-align: center;
+      color: #EF959D;
+      font-family: 'Comfortaa', cursive;
+      
+  }
+  .name{
+      font-weight: 500;
+      
+  
+  
+  }
+  
+  h1{
+      position: relative;
+      bottom: 35%;
+      letter-spacing: 10px; 
+      color: rgba(105, 88, 95, 0.582);  
+      font-weight: 700;
+      font-family: 'Comfortaa', cursive;
+      ;
+  
+  }
+  
+.generate h1{
+    width: 700px;
+    font-weight: 400;
+    
+
+}
+
+
+  .arrow{
+      width: 100px;
+      background-color: transparent;
+      
+  }
+  
+  
+  .gettknowhtecity{
+      width: 900px;
+  }
+  
+  #map1{
+      height: 170px;
+      border-radius: 15px;
+      transition: 0.4s;
+      width: 106%;
+  }
+  
+  .type{
+      font-size: 30px;
+      
+  }
+  #name1{
+      font-size: 30px;
+      
+  
+  }
+  
+  #non{
+      margin-top: 150px;
+  }
+  
+
+  .name, .type, .address{
+    background-color:#FCDDBC;
+
+  }
+  
+
+  .non{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: repeat(12 ,1fr);
+    margin-top: 280px;
+  }
+
+
+  .non-header{
+    grid-column: span 12;
+  }
+
+  .non-main{
+    grid-column: span 12;
+    
+  }
+
+
+  .non-main{
+    height: 114%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 38% 38% 38%;
+    grid-template-columns: repeat(12 ,1fr);
+  }
+  .lunch, .hang-out2, .sundown{
+    grid-column: span 12;
+  }
+
+
+  .non-header h1{
+      text-align: center;
+      color: black;
+      font-size: 70px;
+      letter-spacing: 20px;
+      text-decoration: underline;
+ text-decoration-color: #B8D8BA;
+  }
+
+
+
+  .evening{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-rows: 15% 85%;
+      grid-template-columns: repeat(12 , 1fr);
+      margin-top: 280px;
+      border: 1px solid black;
+  }
+
+.evening-header , .evening-main{
+    grid-column: span 12;
+    border: 1px solid black;
+}
+
+.evening-main{
+    height: 100%;
+    margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: repeat(12 , 1fr);
+      border: 1px solid black;
+
+}
+
+.dinner, .sleep{
+    grid-column: span 12;
+    border: 1px solid black;
+
+}
+
+.evening-header h1{
+    text-align: center;
+      color: black;
+      font-size: 70px;
+      letter-spacing: 20px;
+      text-decoration: underline;
+ text-decoration-color: #B8D8BA;
+}
+
+.evening-header h1 span{
+    font-size: 20px;
+    text-decoration-color: transparent;
+
+}
+
+.dinner .conti{
+    margin-top: 80px;
+}
