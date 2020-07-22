@@ -37,12 +37,12 @@ text-align: center;
 .head-main .btn{
     border-radius: 25px;
     padding: 5px 30px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .head-main .btn:hover{
     padding: 10px 40px;
-    background-color: whitesmoke;
+    background-color: rgb(252, 246, 191);
     color: black;
     letter-spacing: 10px;
     transition: 0.5s;
